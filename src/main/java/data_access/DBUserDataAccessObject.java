@@ -151,4 +151,15 @@ public class DBUserDataAccessObject implements SignupUserDataAccessInterface,
             throw new RuntimeException(ex);
         }
     }
+
+    @Override
+    public void setCurrentUser(String username) {
+        // No need to do anything here. The user is already set in the cloud.
+    }
+
+    @Override
+    public String getCurrentUser() {
+        // No need to do anything here. The user is already set in the cloud.
+        return null;
+    }
 }
